@@ -46,7 +46,7 @@ def run():
   if len(sys.argv) > 1:
     tests = sys.argv[1:]
   else:
-    tests = glob("test?*.py")
+    tests = glob("tests/*.py")
   for test_py in tests:
     test_name = os.path.splitext(test_py)[0]
     test_out = test_name + ".out"
