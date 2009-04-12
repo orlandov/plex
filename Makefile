@@ -1,5 +1,5 @@
 VERSION = 1.1.5
-TAR = ../Plex-$(VERSION).tar
+TAR = ../plex-$(VERSION).tar
 tar:	clean
 	tar cvf $(TAR) *
 	rm -f $(TAR).gz
@@ -7,4 +7,3 @@ tar:	clean
 
 clean:
 	rm -f */*.pyc *~ */*~ */*.dump tests/*.out2 tests/*.err
-
